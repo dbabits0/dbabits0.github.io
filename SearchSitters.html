@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        author: Daniil Babitskii
+        It is pet sitting company website-->
+        <title>Purr Care Home</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+
+        <!--Meta Data: -->
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="pet, sitting, dog, cat, care">
+       
+        <!--CSS: -->
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="style.css">
+        <!--Fonts: -->
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" width="10%">
+                    <h1>Purr Care</h1>
+                    <div id='date_time'></div>
+                </div>
+            </header>
+            <div class="navigation-bar">                                               <!--Navigation bar-->
+                <nav id="options">
+                  <li><a href="BecomeSitter.html">&#10084; Become a Sitter</a></li>    <!--character references-->
+                  <li><a href="AboutUs.html">&#9786; About us</a></li>                 <!--character references-->
+                  <li><a href="index.html">&#8962; Home page</a></li>               <!--character references-->
+                </nav>
+                <nav id="profile">                                                      <!-- list-->
+                   <li><a href="SignUp.html">Sign Up</a></li>
+                   <li><a href="LogIn.html">Log In</a></li>
+                </nav>
+                <div id="floated-layout">
+                    <form id="search">                                                <!--form-->
+                        <fieldset id="search_personal_information">
+                            <legend>When do you need the service?</legend>
+                            <p>since</p>
+                            <input type="date" id="search_bar_date_start" name="search_bar_date_start"><p>until</p>                     <!--date-->
+                            <input type="date" id="search_bar_date_end" name="search_bar_date_end">                         <!--date-->
+                
+                        </fieldset>
+                        <fieldset id="search_address">
+                            <legend>Address</legend>
+                            <input name="search_address" id="search_address" type="text" required placeholder="street address" maxlength="40"/>                                   <!--text, maxlength, required -->
+                            <input name="search_apt" id="search_apt" type="text" placeholder="apartment number" maxlength="7"/>                                                     <!--text, maxlength-->
+                            <input name="search_zip" id="search_zip" type="text" required placeholder="zip code" pattern="[0-9]{5}" minlength ="5" maxlength="5"/>                   <!--text, minlenght/maxlength, pattern, required -->
+                            <label for="state">State</label>
+                            <input list="browsers" id="state" name="state" required>
+                            <datalist id="browsers">                                                                                                           <!--select, required  -->
+                                <option value="AL">AL</option>
+                                <option value="AL">AL</option>
+                                <option value="AK">AK</option>
+                                <option value="AZ">AZ</option>
+                                <option value="AR">AR</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="CT">CT</option>
+                                <option value="DE">DE</option>
+                                <option value="FL">FL</option>
+                                <option value="GA">GA</option>
+                                <option value="HI">HI</option>
+                                <option value="ID">ID</option>
+                                <option value="IL">IL</option>
+                                <option value="IN">IN</option>
+                                <option value="IA">IA</option>
+                                <option value="KS">KS</option>
+                                <option value="KY">KY</option>
+                                <option value="LA">LA</option>
+                                <option value="ME">ME</option>
+                                <option value="MD">MD</option>
+                                <option value="MA">MA</option>
+                                <option value="MI">MI</option>
+                                <option value="MN">MN</option>
+                                <option value="MS">MS</option>
+                                <option value="MO">MO</option>
+                                <option value="MT">MT</option>
+                                <option value="NE">NE</option>
+                                <option value="NV">NV</option>
+                                <option value="NH">NH</option>
+                                <option value="NJ">NJ</option>
+                                <option value="NM">NM</option>
+                                <option value="NY">NY</option>
+                                <option value="NC">NC</option>
+                                <option value="ND">ND</option>
+                                <option value="OH">OH</option>
+                                <option value="OK">OK</option>
+                                <option value="OR">OR</option>
+                                <option value="PA">PA</option>
+                                <option value="RI">RI</option>
+                                <option value="SC">SC</option>
+                                <option value="SD">SD</option>
+                                <option value="TN">TN</option>
+                                <option value="TX">TX</option>
+                                <option value="UT">UT</option>
+                                <option value="VT">VT</option>
+                                <option value="VA">VA</option>
+                                <option value="WA">WA</option>
+                                <option value="WV">WV</option>
+                                <option value="WI">WI</option>
+                                <option value="WY">WY</option>
+                            </state>
+                        </fieldset>
+                        <fieldset id="search_service">
+                            <legend>What service do you need?</legend>
+                            <input type="checkbox" id="type_of_service" name="type_of_service" value="dog">Sitting</input>                                         <!--checkbox-->
+                            <input type="checkbox" id="type_of_service" name="type_of_service" value="dog">Walking</input> 
+                            <input type="checkbox" id="type_of_service" name="type_of_service" value="dog">Feeding</input><br>
+                            <input type="submit" id="search_info_submit" value="Submit"/>                                                                                        <!--submit-->
+                        </fieldset>
+                    </form>
+                     <div id="profiles">
+                        <div class="column" id="left-column">
+                           <p>here would be sitters profiles</p>
+                        </div>
+                        <div class="column" id="center-column">
+                            <p>here would be sitters profiles</p>
+                        </div>
+                        <div class="column" id="right-column">
+                            <p>here would be sitters profiles</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <aside class="adv">
+            <p>Discounts for booking a sitter!!! Left time:</p>
+            <div id="left_time"></div>
+        </aside>
+        
+        <footer class="main">
+            <p>
+                Need Help?
+                <ul>                                                                                 <!-- list-->
+                    <li><a href="mailto:purrcare@email.com">&#x2709;purrcare@email.com</a></li>      <!--character references-->
+                    <li><a href="tel:+1234567890">&#x2706;+1 (234) 567-890</a></li>                  <!--character references-->
+                    <li><a href="ContactUsForm.html">Contact us</a></li>
+            
+                </ul>
+            </p>
+        
+        </footer>
+    </body>
+</html>

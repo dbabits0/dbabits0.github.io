@@ -1,0 +1,200 @@
+.main {
+    margin-right: 10%;
+}
+
+.logo {
+    display: inline-flex;                     /*flex*/
+    justify-content: left;
+    align-items: center;
+    min-width: 100%;
+    min-height: auto;
+    gap: 5%;
+
+}
+.navigation-bar {
+    display: grid;                          /*grid*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#options {
+    display: grid;                            /*grid*/
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 5%;
+}
+
+#profile {
+    display: grid;                             /*grid*/
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: end;
+    gap: 10%;
+    margin-right: 5%;
+}
+.OurServices {
+    display: flex;                             /*flex*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    margin-top: 7%;
+}
+
+.bodypictures {
+    display: grid;                              /*grid*/
+    gap: 1%;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center; 
+    align-items: center; 
+    margin-top: 1%; 
+    img {
+        width: 50%;
+        height: auto;
+    }
+}
+#floated-layout {                              /*floated layout*/
+    width: 100%;
+    overflow: hidden; 
+}
+
+#search-bar {
+    width: 70%; 
+    float: left;
+    margin-right: 5%; 
+    box-sizing: border-box; 
+    text-align: center; 
+    line-height: 100%; 
+}
+
+#profiles {
+    width: 100%;
+}
+
+.column {
+    float: left;
+    margin-top: 3%;
+    margin-right: 3%; 
+    box-sizing: border-box;
+    width: 30%;
+}
+
+
+
+.adv {
+    position: absolute;                   /*absolute position*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 90%;
+    text-align: center;
+}
+
+.adv p {                              /*contextual selector*/
+    display: flex;                      /*flex*/
+    justify-content: center; 
+    align-items: center; 
+    overflow: auto;
+}
+
+#walk_1 {
+    float: right;                     /*floated element*/
+    max-width: 200px;
+    max-height: 100px; 
+    overflow: hidden;                 /*Handle overflow*/
+}
+
+#walk_1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+footer {
+    display: block;                        /*block*/
+    margin-bottom: 3%;
+    text-align: center;    
+    ul {
+        list-style-position: inside;
+    }   
+}
+
+#aboutus-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {                               /*media*/
+    .navigation-bar {
+        grid-template-columns: 1fr;
+    }
+
+    #options {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    #profile {
+        justify-self: center;
+    }
+    
+    .bodypictures {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    footer {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+
+}
+
+@media (max-width: 600px) {                                       /*media*/
+    #options {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #profile {
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    .bodypictures {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #aboutus-text {
+        max-width: 50%;
+    }
+
+    .adv {
+        position: relative;                              /*relative position*/
+        top: auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .adv p {
+        display: flex;                                    /*flex*/
+        justify-content: center; 
+        align-items: center; 
+        overflow: auto;
+    }
+    footer {
+        margin-left: 2%;
+    }
+
+}
+
+fieldset {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.distance {
+    display: inline-block;
+}
+
+
+

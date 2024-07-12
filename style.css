@@ -1,0 +1,86 @@
+html {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.logo {
+    background-color: rgb(185, 134, 59);              /*background color*/
+    font-family: "Playwrite MX", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+  }
+  .OurServices {
+    font-size: 1vw;
+  }
+
+  .bodypictures img {
+    border: 5px solid rgb(185, 134, 59); 
+    border-radius: 10px;
+    padding: 10px;
+  }
+ 
+  #search-bar {
+    border: 5px solid rgb(185, 134, 59); 
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .column {
+    border: 5px solid rgb(185, 134, 59); 
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .adv {
+    border: 5px solid rgb(185, 134, 59); 
+    border-radius: 10px; 
+    padding: 10px;
+  }
+
+  footer {
+    background-color: rgb(48, 40, 16);               /*background color*/
+    color: rgb(253, 253, 253);           /*font color*/
+
+    a:link {                               /*pseudo class*/
+        color: rgb(253, 253, 253);       /*font color*/
+    }
+    
+    a:visited {                             /*pseudo class*/
+        color: rgb(253, 253, 253);       /*font color*/
+    }
+    
+    a:hover {                              /*pseudo class*/
+        color: rgb(224, 232, 108);      /*font color*/
+    }
+  }
+
+a[href] {                                /*attribute selector*/  
+        color: rgb(185, 134, 59);      /*font color*/
+    }
+
+a[href] {                                /*attribute selector*/ 
+    color: rgb(185, 134, 59);          /*font color*/
+}
+
+a:hover {                                /*pseudo class*/
+    color: rgb(224, 232, 108);         /*font color*/
+}
+
+input:focus:valid {                               /*:focus:valid*/
+  border: 4px solid rgb(3, 248, 36);                          
+}
+input:focus:invalid {                                /*:focus:invalid*/
+  border: 4px solid rgb(250, 20, 4); 
+}
+
+fieldset {
+  border: 5px solid rgb(185, 134, 59); 
+}
+legend {
+  font-family: "Playwrite MX", cursive;
+}
+
+
